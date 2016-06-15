@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000" >
+
+    <!-- TODO 默认占位图 -->
+
+    <com.jyh.hjtzdxt.customtool.ZoomableImageView
+        android:id="@+id/show_webimage_imageview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="matrix"
+        android:src="@drawable/icon" />
+
+    <RelativeLayout
+        android:id="@+id/save_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/save_btn" />
+    </RelativeLayout>
+
+</FrameLayout>

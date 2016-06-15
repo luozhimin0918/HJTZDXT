@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_hq_hq"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/flash_blow_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/error_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="数据加载失败,点击重新加载"
+        android:textColor="#000000"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/jw_main_all_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/jw_mian_ll"
+            android:layout_width="match_parent"
+            android:layout_height="40.0dip"
+            android:background="?attr/hq_top"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rl_column"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1.0" >
+
+                <com.jyh.hjtzdxt.customtool.ColumnHorizontalScrollView
+                    android:id="@+id/mColumnHorizontalScrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:scrollbars="none" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/mRadioGroup_content"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.jyh.hjtzdxt.customtool.ColumnHorizontalScrollView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_more_columns"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip" >
+
+                <ImageView
+                    android:id="@+id/btn_hq_frag"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:src="?attr/hq_btn" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_hq"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

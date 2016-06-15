@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/img_fz_mr"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?attr/bq_bg"
+        android:gravity="center"
+        android:src="?attr/bq_mr"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/img_fz_ct"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?attr/bq_bg"
+        android:gravity="center"
+        android:src="?attr/bq_ct"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:id="@+id/img_fz_x"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?attr/bq_bg"
+        android:gravity="center"
+        android:src="?attr/bq_blx" 
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:id="@+id/img_fz_pb"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?attr/bq_bg"
+        android:gravity="center"
+        android:src="?attr/bq_ppb"
+        android:scaleType="fitXY" />
+
+</LinearLayout>

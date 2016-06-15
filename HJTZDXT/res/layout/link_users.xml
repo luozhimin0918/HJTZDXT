@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/tk_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linkuser_zt_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/flash_top"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true" >
+
+        <LinearLayout
+            android:id="@+id/sc_img_activity"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/return_tag" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="联系我们"
+            android:textColor="?attr/rl_tv"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="265dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:background="?attr/kxtcj_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:text="官方微信 ： kuaixun360"
+        android:textColor="#999999" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="合作与联系方式:"
+        android:textColor="#f55757" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="QQ:2980597608"
+        android:textColor="#999999" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_weight="1"
+        android:text="Email:kefu@KXT.COM"
+        android:textColor="#999999" />
+
+    <ImageView
+        android:layout_width="161dp"
+        android:layout_height="15dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/kxt_btn_log" />
+
+</LinearLayout>

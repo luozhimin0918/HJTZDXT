@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/flash_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/jw_mian_ll"
+        android:layout_width="match_parent"
+        android:layout_height="40.0dip"
+        android:background="?attr/flash_top"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_column"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_weight="1.0" >
+
+            <com.jyh.hjtzdxt.customtool.ColumnHorizontalScrollView
+                android:id="@+id/mColumnHorizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/mRadioGroup_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </LinearLayout>
+            </com.jyh.hjtzdxt.customtool.ColumnHorizontalScrollView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_more_columns"
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip" >
+
+            <ImageView
+                android:id="@+id/btn_hq_frag"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_gravity="center_vertical"
+                android:src="?attr/img_btn" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mViewPager"
+        android:layout_width="match_parent"
+        android:background="?attr/flash_bg"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

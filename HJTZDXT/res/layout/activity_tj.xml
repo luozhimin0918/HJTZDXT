@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/flash_bg"
+    android:orientation="vertical" 
+    >
+
+    <LinearLayout
+         android:id="@+id/tj_zt_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/flash_top"
+        android:clipToPadding="true"
+       android:fitsSystemWindows="true" 
+       android:paddingBottom="10dp">
+
+         <LinearLayout
+            android:id="@+id/sc_img_activity"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/return_tag" 
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            />
+
+</LinearLayout>
+            <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="推荐给我的好友"
+            android:layout_marginRight="40dp"
+            android:textColor="?attr/rl_tv"
+            android:textSize="18sp" 
+            android:layout_marginTop="5dp"
+           android:layout_marginBottom="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tj_ac_wx"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?attr/flash_blow_bg"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/share_wx_icon" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="推荐到微信好友"
+            android:textColor="?attr/dp_tv" />
+
+        <ImageView
+            android:layout_width="11dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/enter" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#999999" />
+
+    <LinearLayout
+        android:id="@+id/tj_ac_py"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?attr/flash_blow_bg"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/share_pyq_icon" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="推荐到朋友圈"
+            android:textColor="?attr/dp_tv" />
+
+        <ImageView
+            android:layout_width="11dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/enter" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#999999" />
+
+    <LinearLayout
+        android:id="@+id/tj_ac_qq"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?attr/flash_blow_bg"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/share_qq_icon" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="推荐给QQ好友"
+            android:textColor="?attr/dp_tv" />
+
+        <ImageView
+            android:layout_width="11dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/enter" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#999999" />
+
+    <LinearLayout
+        android:id="@+id/tj_ac_xl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?attr/flash_blow_bg"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/share_sina_icon" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="推荐到新浪微博"
+            android:textColor="?attr/dp_tv" />
+
+        <ImageView
+            android:layout_width="11dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/enter" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#999999" />
+
+</LinearLayout>

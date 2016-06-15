@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dpweb_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/flash_bg" >
+
+    <RelativeLayout
+        android:id="@+id/flash_web_relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/flash_bg"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/progress_bg" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/flash_web_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#999999"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <WebView
+            android:id="@+id/flash_webView1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="?attr/flash_bg" />
+
+        <TextView
+            android:id="@+id/flash_error_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="?attr/flash_bg"
+            android:gravity="center"
+            android:textColor="?attr/flash_tv"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1px"
+            android:background="?attr/flash_blow_bg"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ll_flash_back"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/dp_tag_back1" />
+            </LinearLayout>
+
+            <!-- <LinearLayout
+                android:id="@+id/ll_flash_sc"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/dp_tag_sc" />
+            </LinearLayout> -->
+
+            <LinearLayout
+                android:id="@+id/ll_flash_setfont"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/webview_setfont" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_flash_share"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/dp_tag_share1" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

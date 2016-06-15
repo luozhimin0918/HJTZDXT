@@ -1,0 +1,128 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jyh.hjtzdxt.MainActivity" 
+    android:background="?attr/flash_bg">
+
+    <com.jyh.hjtzdxt.view.MyLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/showLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <com.gensee.view.GSVideoView
+                android:id="@+id/liveShowId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/liveFullId"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#0000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/selector_live_full"
+				android:layout_gravity="bottom|right"
+				android:layout_margin="14dp"
+                />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/menuId"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/chatbgId"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="?attr/color_live"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/chatId"
+                    android:layout_width="61dp"
+                    android:layout_height="18dp"
+                    android:background="?attr/sel_chat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/servicebgId"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="?attr/color_live"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/serviceId"
+                    android:layout_width="61dp"
+                    android:layout_height="18dp"
+                    android:background="?attr/sel_kefu" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/listbgId"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="?attr/color_live"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/listId"
+                    android:layout_width="61dp"
+                    android:layout_height="18dp"
+                    android:background="?attr/sel_list" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/functionbgId"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="?attr/color_live"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/functionId"
+                    android:layout_width="61dp"
+                    android:layout_height="18dp"
+                    android:background="?attr/sel_fun" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?attr/line_color"
+            android:orientation="vertical" />
+
+        <com.jyh.hjtzdxt.customtool.MyViewPager2
+            android:id="@+id/live_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1.75"
+             />
+    </com.jyh.hjtzdxt.view.MyLinearLayout>
+
+    <ImageView
+        android:id="@+id/livebackId"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="14dp"
+        android:background="#0000"
+        android:scaleType="fitCenter"
+        android:src="@drawable/live_back" />
+
+</FrameLayout>
